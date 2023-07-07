@@ -1,0 +1,46 @@
+[{
+  "name": "LocalizationKit",
+  "description": "LocalizationKit is a library designed to make managing localizations in .NET easier.",
+  "repo_url": "https://github.com/alastairlundy/LocalizationKit",
+  "type": "Software Library",
+  "license": "MIT",
+  "tech_used": ["C# .NET"]
+  
+},
+  {
+    "name": "SettingsKit",
+    "description": "Make managing settings in .NET applications easy",
+    "repo_url": "https://github.com/alastairlundy/SettingsKit",
+    "type": "Software Library",
+    "license": "MIT",
+    "tech_used": ["C# .NET"]
+  },
+  {
+    "name": "PlatformKit",
+    "description": "PlatformKit is a C# .NET library focusing on dealing with cross-platform OS detection, OS version detection, platform specific code, and platform specific issues.",
+    "repo_url": "https://github.com/PlatformKit-Project/PlatformKit",
+    "image": {
+      "image_url": "https://github.com/PlatformKit-Project/PlatformKit/blob/main/images/logos/platformkit_logo_512x.jpg",
+      "image_alt_text": "PlatformKit Logo"
+    },
+    "type": "Software Library",
+    "license": "LGPLv3 Or Later",
+    "tech_used": ["C# .NET"]
+  },
+  {
+    "name": "DeveloperKit",
+    "description": "A C# .NET library to hold shared or common code to help many types of projects.",
+    "repo_url": "https://github.com/alastairlundy/DeveloperKit",
+    "type": "Software Library",
+    "license": "BSD 3 Clause License",
+    "tech_used": ["C# .NET"]
+  },
+  {
+    "name": "LundyPay Contactless",
+    "description": "A free and open source alternative to Google Pay/Google Wallet.",
+    "repo_url": "https://github.com/LundyPay/LundyPayContactless",
+    "type": "Mobile Application",
+    "license": "GPLv3 or Later",
+    "tech_used": ["Kotlin"]
+  }
+]
