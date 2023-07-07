@@ -1,0 +1,72 @@
+@page
+@model AlastairLundyWebsite.Pages.ProjectsModel
+
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Alastair Lundy's Projects</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    
+    <h5>These are some projects I've worked on:</h5>
+    
+</div>
+
+<div class="card-group">
+    <div class="row-cols-8 row-cols-md-2 g-8">
+
+    @foreach (var project in Model.Projects)
+                {
+                    <div class="col">
+                        <div class="card text-bg-light" style="max-width: 18rem;">
+
+                            @if (@project.Image?.Url != null)
+                            {
+                                <div class="card-img">
+                                    <img src="@project.Image?.Url" alt="@project.Image?.AltText"/>
+                                </div>
+                            }
+
+                            <div class="card-header">
+                                <h3 class="card-title">@project.Name</h3>
+                                <p class="card-text">@project.Description</p>
+                            </div>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Type: @project.Type.ToString()</li>
+                                <li class="list-group-item">License: @project.License</li>
+
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item card-title">Technology Used:</li>
+
+                                @foreach (var tech in @project.Technologies)
+                                {
+                                    <li class="list-group-item">@tech</li>
+                                }
+                            </ul>
+                            <div class="card-body">
+                                @if (project.ProjectWebsiteUrl != null)
+                                {
+                                    <a class="card-link" href="@project.ProjectWebsiteUrl">Project Website</a>
+                                }
+                                @if (project.ProjectRepoUrl != null)
+                                {
+                                    <a class="card-link" href="@project.ProjectRepoUrl">Git Repository</a>
+                                }
+                            </div>
+                        </div>
+                        </div>
+                }
+            </div>
+</div>
+</body>
+</html>
